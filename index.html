@@ -10,14 +10,14 @@
 </head>
 <body style="background-color: #363435;">
     <!-- Cabeçalho -->
-    <header class="header">
+    <header class="header" id="cabecalho">
         <a href=""><img class="header-logo" src="img/logo-rgbikemotos.png" alt="RG BIKE MOTOS"></a>
         <nav class="header-nav">
-             <a class="header-nav-item" href="">Home</a>
-             <a class="header-nav-item" href="">Sobre Nós</a>
-             <a class="header-nav-item" href="">Marcas</a>
-             <a class="header-nav-item" href="">Galeria</a>
-             <a class="header-nav-item" href="">Contato</a>   
+             <a class="header-nav-item" href="#carousel">Home</a>
+             <a class="header-nav-item" href="#sobre">Sobre Nós</a>
+             <a class="header-nav-item" href="#marcas">Marcas</a>
+             <a class="header-nav-item" href="#galeria">Galeria</a>
+             <a class="header-nav-item" href="#contato">Contato</a>   
         </nav>
     </header>
     <!-- Carrousel de imagens -->
@@ -60,7 +60,7 @@
         </a>
     </div>
     <!-- Seção Sobre Nós -->
-    <section class="about">
+    <section class="about" id="sobre">
         <div class="about-text">
             <h1 class="about-text-title">Sobre Nós</h1>
             <p class="about-text-subtitle">
@@ -81,7 +81,7 @@
         <img class="about-img" src="img/colagem.png">
     </section>
     <!-- Seção de Marcas -->
-    <section class="brands">
+    <section class="brands" id="marcas">
         <div class="brands-text">
             <h1 class="brands-text-title">Marcas</h1>
         </div>
@@ -95,7 +95,7 @@
         </div>
     </section>
     <!-- Seção de Galeria -->
-    <section class="galery">
+    <section class="galery" id="galeria">
         <div class="galery-text">
             <h1 class="galery-text-title">Galeria</h1>
         </div>
@@ -133,22 +133,22 @@
         </div>
     </section>
     <!-- Seção de Contato -->
-    <section class="contact">
+    <section class="contact" id="contato">
         <div class="contact-content">
             <div class="contact-content-email">
                 <p class="contact-content-email-title">Nos envie um email</p>
-                <button type="submit" class="contact-content-email-button" onclick="popup()">Clique aqui</button>
+                <button type="submit" class="contact-content-email-button" data-toggle="modal" data-target="#exampleModal">Clique aqui</button>
             </div>
             <div class="contact-content-insta">   
                 <p class="contact-content-insta-title">Instagram</p>
-                <img src="img/instagram.png" alt="" class="contact-content-insta-logo">
+                <a href="https://instagram.com/rgbikemotos" target="_blank"><img src="img/instagram.png" alt="" class="contact-content-insta-logo"></a>
             </div>
             <div class="contact-content-wpp">
                 <p class="contact-content-wpp-title">Whatsapp</p>
-                <img src="img/whatsapp.png" alt="" class="contact-content-wpp-logo">
+                <a href="https://wa.me/33988442633" target="_blank"><img src="img/whatsapp.png" alt="" class="contact-content-wpp-logo"></a>
             </div>
             <div class="contact-content-logorg">
-                <img src="img/logo-rgbikemotos.png" alt="" class="contact-content-logorg-img">
+                <a href=""><img src="img/logo-rgbikemotos.png" alt="" class="contact-content-logorg-img"></a>
             </div>
             
         </div>
@@ -161,9 +161,44 @@
         <p class="footer-txt">Copyright © 2022 RG BIKE MOTOS - Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Envie um email</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="get" action="" >
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Seu nome:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Seu e-mail:</label>
+                <input type="email" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensagem:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary" onclick="validaForm()">Enviar</input>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </body>
 </html>
