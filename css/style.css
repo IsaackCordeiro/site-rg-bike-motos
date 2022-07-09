@@ -5,6 +5,8 @@
     text-decoration: none;
 }
 
+/* Cabeçalho */
+
 .header{
     width: 100%;
     display: flex;
@@ -20,19 +22,16 @@
 }
 
 .header-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    
+    width: 60%;
 }
 
 .header-nav-item{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    color: #FFFFFF;
+    font-size: 19px;
+    color: #D9D9D9;
     border-right: 1px solid #363435;
-    padding: 0 5%;
+    padding: .8% 5%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -48,13 +47,16 @@
     text-decoration: underline;
 }
 
+/* Carrousel */
+
 .carousel-item-caption-title , .carousel-item-caption-subtitle{
     font-family: 'Inter', sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* Sobre nós */
+
 .about{
-    margin: 40px 70px 20px;
     display: flex;
     flex-direction: row;
 }
@@ -65,41 +67,168 @@
     row-gap: 30px;
     justify-content: flex-start;
     margin-right: 150px;
+    padding: 6% 6%;
 }
 
 .about-text-title{
-    color: #FFFFFF;
-    border-bottom: 1px solid #84E002;
-    margin-top: 50px;
-    width: 33%;
+    color: #D9D9D9;
+    border-bottom: 1px solid #84E002; 
+    width: 43%;
 }
 
 .about-text-subtitle{
-    color: #FFFFFF;
+    color: #D9D9D9;
 }
 
 .about-img{
-    width: 40%;
+    max-width: 40%;
+    margin: auto;
+    padding-top: 2%;
+    margin-right: 4%;
 }
+
+/* Marcas */
 
 .brands{
     width: 100%;
-    height: 620px;
+    height: auto;
     background-color: #D9D9D9;
-    position: absolute;
 }
-
+.brands-text{
+    margin: 3% 6%;
+}
 .brands-text-title{
     color: #363435;
     border-bottom: 1px solid #363435;
-    width: 10%;
-    margin: 50px 0px 10px 70px;
+    width: 11%;
+    padding-top: 2%;
 }
 
 .brands-imgs{
     text-align: center;
+    padding-bottom: 3%;
 }
 
 .brands-img{
     width: 25%;
+}
+
+/* Galeria */
+
+.galery{
+    width: 100%;
+    height: auto;
+}
+
+.galery-text{
+    margin: 3% 6%;
+}
+
+.galery-text-title{
+    color: #D9D9D9;
+    border-bottom: 1px solid #84E002;
+    width: 11%;
+    padding-top: 2%;
+}
+
+.carousel-galery{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+#carousel-galery-img{
+    border-radius: 20px;
+}
+
+/* Contato */
+
+.contact{
+    width: 100%;
+    height: auto;
+    background-color: #628263;
+}
+
+.contact-content{
+    padding: 3% 3%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contact-content-email{
+    width: 25%;
+}
+
+.contact-content-email-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+
+.contact-content-email-button{
+    width: 60%;
+    height: 55px;
+    background-color: #363435;
+    color: #D9D9D9;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.contact-content-email-button:hover{
+    cursor: pointer;
+}
+
+.contact-content-insta{
+    width: 25%;
+}
+.contact-content-insta-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+.contact-content-insta-logo{
+    width: 20%;
+}
+
+.contact-content-wpp{
+    width: 25%;
+}
+
+.contact-content-wpp-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+.contact-content-wpp-logo{
+    width: 20%;
+}
+
+.contact-content-logorg-img{
+    width: 60%;
+}
+
+.contact-content-endereco{
+    width: 100%;
+    text-align: center;
+}
+.contact-content-endereco-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #D9D9D9;
+    padding-bottom: 1%;
+}
+
+/* Rodapé */
+
+.footer{
+    width: 100%;
+}
+
+.footer-txt{
+    font-size: 16px;
+    font-weight: bold;
+    color: #D9D9D9;
+    text-align: center;
 }
